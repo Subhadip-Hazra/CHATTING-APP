@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-header">
+      <h1>Real-Time Chat</h1>
+      <div id="connected-users"></div>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="message-input-container">
+      <input type="text" id="message-input" placeholder="Type your message">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+
+  <!-- Load the Socket.io library from a CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>

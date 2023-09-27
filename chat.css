@@ -1,0 +1,138 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Style for the chat container */
+#chat-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #63e626;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Style for the chat header */
+#chat-header {
+  background-color: #128c7e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style for the chat header h1 */
+#chat-header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Style for the connected users list */
+#connected-users {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style for the chat messages */
+#chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Style for the message input container */
+#message-input-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+/* Style for the message input */
+#message-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Style for the send button */
+#send-button {
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Hover effect for the send button */
+#send-button:hover {
+  background-color: #128c7e;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 248px) {
+  #message-input-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #message-input {
+    margin-top: 10px;
+  }
+
+  #send-button {
+    margin: 10px 0 0;
+  }
+}
+
+/* Styles for messages */
+.message {
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 6px;
+  max-width: 70%;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Styles for the user's own messages */
+.own-message {
+  background-color: #05ff05;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Styles for received messages */
+.received-message {
+  background-color: #1117d32c;
+  color: #fff;
+  align-self: flex-start;
+}
+
+/* Animation for messages */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
